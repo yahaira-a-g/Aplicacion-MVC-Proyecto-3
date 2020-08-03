@@ -4,15 +4,15 @@ package Modelo;
 public class Libro {
     private int idlibro;
     private String titulo;
-    private String cantidad;
-    private String anio;
-    private String precio;
+    private int cantidad;
+    private int anio;
+    private double precio;
     private String estado;
     
     //Constructor Vacio
     public Libro(){ 
     }
-    public Libro(String titulo, String cantidad, String anio, String precio, String estado){ 
+    public Libro(String titulo, int cantidad, int anio, double precio, String estado){ 
         this.titulo = titulo;
         this.cantidad = cantidad;
         this.anio = anio;
@@ -35,27 +35,27 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public String getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(String cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
-    public String getAnio() {
+    public int getAnio() {
         return anio;
     }
 
-    public void setAnio(String anio) {
+    public void setAnio(int anio) {
         this.anio = anio;
     }
 
-    public String getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
